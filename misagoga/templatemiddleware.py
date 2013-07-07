@@ -1,5 +1,5 @@
 from django.conf import settings
-from misago.template.loader import render_to_string
+from misago.utils.plugins import render_to_string
 
 class GoogleAnalyticsMiddleware(object):
     def process_context(self, templates, context):
